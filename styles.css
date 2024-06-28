@@ -807,4 +807,71 @@ padding-top:8rem;
 /* ------------------------ */
 /* Contacts Page */
 /* ------------------------ */
+.contact-page__border-x{
+  border-right:12px solid #F0F0F0;
+  border-left:12px solid #F0F0F0;
+}
 
+/* ------------------------ */
+/* Campus */
+/* ------------------------ */
+
+.campuses-page__img{
+  height:28rem;
+  object-fit:cover;
+
+}
+
+.campuses-page__logo{
+  width:8rem;
+}
+.campuses-page__title{
+  font-size:32px;
+  font-weight:bold;
+  color:#1C68C9;
+}
+.campuses-page__p{
+  color:#1C68C9;
+
+}
+.campuses-page__no{
+  color:#1C68C9;
+  display:flex;
+  justify-content:end;
+  position:relative;
+}
+.campuses-page__text-bg{
+  position:absolute;
+  object-fit:cover;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+}
+.campuses-page__overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(253, 253, 102, .7)
+}
+
+@media (max-width: 768px) {
+
+  .campuses-page__img{
+    height:24rem;
+    object-fit:cover;
+  
+  }
+  .campuses-page__logo{
+    width:6rem;
+  }
+  .campuses-page__title{
+    font-size:28px;
+    font-weight:bold;
+    color:#1C68C9;
+  }
+  
+}
