@@ -875,3 +875,203 @@ padding-top:8rem;
   }
   
 }
+
+/* ------------------------ */
+/* News */
+/* ------------------------ */
+.news-page__lg-img{
+  height:25rem;
+
+
+}
+.news-page__img{
+  height:16rem;
+  width:100%;
+  object-fit:cover;
+
+}
+.news-page__lg-container{
+  background:rgba(253, 253, 102, .5)
+
+}
+.news-page__title-lg{
+  font-size:32px;
+}
+.news-page__title{
+  font-size:24px;
+}
+.news-page__date{
+  font-size:14px;
+}
+.news-page__btn{
+  border:none;
+  color:#1C68C9;
+  font-weight:bold;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding:8px 16px;
+  border-radius:8px;
+
+}
+
+/* ------------------------ */
+/* Careers Information */
+/* ------------------------ */
+
+.careers-page__title-page{
+  font-size:36px;
+  font-weight:bold;
+  color:#1C68C9;
+  text-align:center;
+  padding:20px 0;
+  text-transform:uppercase;
+  border-bottom:2px solid #1C68C9;
+}
+.careers-page__title{
+  font-size:28px;
+  font-weight:bold;
+  color:#1C68C9;
+
+}
+.careers-page__two-img{
+  width:6rem;
+  height:5rem;
+  border-radius:10px;
+}
+
+
+/* ------------------------ */
+/* Events */
+/* ------------------------ */
+
+.events-page__title-page{
+  font-size:36px;
+  font-weight:bold;
+  color:#1C68C9;
+  text-align:center;
+  padding:20px 0;
+  text-transform:uppercase;
+  border-bottom:2px solid #1C68C9;
+}
+
+.events-page__card-container{
+  background-color:#ffffff;
+  display:flex;
+  height:100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor:pointer;
+
+}
+
+.events-page__card-l-container{
+  background-color:#1C68C9;
+  color:#ffffff;
+  padding:8px 16px;
+  text-align:center;
+  display:grid;
+  place-items:center;
+  height:100%;
+
+}
+
+.events-page__card-day{
+  font-weight:900;
+  font-size:16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding:2px 0;
+  display:block;
+  width:100%;
+
+}
+
+.events-page__card-date{
+  font-size:12px;
+
+}
+
+.events-page__card-to{
+  font-size:12px;
+  padding: 0 10px;
+
+}
+.events-page__card-line{
+  border-top: 1px solid white;
+  width: 36px;
+}
+
+
+.events-page__card-r-container{
+  padding:12px 16px;
+  color:#1C68C9;
+
+
+}
+
+.events-page__card-title{
+  font-size:28px;
+  color:#1C68C9;
+  font-weight:bold;
+  margin:0;
+
+}
+
+.events-page__card-badge{
+  background-color:#FDFD66;
+  color:#1C68C9;
+  text-transform:uppercase;
+  display:inline-block;
+  font-size:10px;
+  padding:2px 12px;
+  border-radius:24px;
+  transform:translateY(-4px);
+}
+
+.events-page__card-time{
+font-size:14px;
+}
+
+.events-page__card-location{
+
+font-size:14px;
+}
+.events-page__photographs-img__container{
+  position:relative;
+  cursor:pointer;
+
+}
+.events-page__photographs-img__container:hover .events-page__photographs-img-overlay  {
+  background:none;
+
+}
+.events-page__photographs-img__container:hover .events-page__photographs-img__title{
+  opacity:0;
+}
+
+.events-page__photographs-img{
+  max-height:36rem;
+  width:100%;
+  object-fit:cover;
+  position:relative;
+}
+.events-page__photographs-img-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(253, 253, 102, .2);
+  z-index:2;
+  transition:all .3s ease-in-out;
+}
+.events-page__photographs-img__title{
+  transition:all .3s ease-in-out;
+  font-size:28px;
+  font-weight:900;
+  color:#ffffff;;
+  text-transform:uppercase;
+  position:absolute;
+  bottom:10px;
+  z-index:100;
+  left: 50%;
+  white-space:nowrap;
+  transform: translateX(-50%);
+}
