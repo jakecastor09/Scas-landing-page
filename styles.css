@@ -386,6 +386,123 @@ a{
   font-weight:bold;
 }
 
+/* Campuses */
+.campuses__header-title{
+  font-size:48px;
+  font-weight:bold;
+  text-transform:uppercase;
+  color:#ffffff;
+  background-color:#1C68C0;
+  padding:24px 0 58px 0;
+  text-align:center;
+}
+.campuses__l-container{
+  position:relative;
+  overflow:hidden;
+  color:#1C68C0;
+}
+
+.campuses__l-content{
+  display:flex;
+  padding:3rem;
+  position:relative;
+  align-items:center;
+  gap:16px;
+  z-index:7;
+
+}
+.campuses__img-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:1;
+  object-fit:cover;
+  transition:all 0.3s ease-in-out;
+}
+.campuses__contact-container{
+  position:absolute;
+  z-index:7;
+  bottom:1.5rem;
+  right:1.5rem;
+  font-size:14px;
+}
+.campuses__title{
+  font-size:28px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.campuses__p{
+  font-size:14px;
+}
+.campuses__img{
+  width:10rem;
+  height:10rem;
+}
+.campuses__overlay{
+  position:absolute;
+  background: rgba(253, 253, 102, 0.8);
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:3;
+}
+
+.campuses__parent-container:hover .campuses__overlay{
+  background: rgba(253, 253, 102, 0.8);
+  right:-115px;
+  z-index:6;
+  clip-path: polygon(0% 0, 85% 0, 100% 48%, 85% 100%, 0% 100%);
+}
+.campuses__parent-container:hover .campuses__img-overlay{
+  transform:scale(1.2);
+}
+
+.campuses__btn{
+  border:none;
+  color:#1C68C9;
+  font-weight:bold;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding:8px 16px;
+  border-radius:8px;
+}
+.campuses__container{
+  transform: translateY(-36px)
+}
+
+@media (max-width: 768px) {
+  .campuses__l-content{
+    padding:1rem;
+  }
+  .campuses__title{
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+  .campuses__p{
+    font-size:10px;
+  }
+  .campuses__img{
+    width:6rem;
+    height:6rem;
+  }
+  .campuses__contact-container{
+    position:absolute;
+    z-index:7;
+    bottom:.5rem;
+    right:1rem;
+    font-size:8px;
+  }
+  .campuses__container{
+    transform: translateY(0px)
+  }
+  .campuses__header-title{
+    font-size: 32px;
+    padding: 24px 0 24px 0;
+  }
+}
 /* Gallery */
 
 
