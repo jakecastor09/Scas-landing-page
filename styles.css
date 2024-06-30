@@ -998,7 +998,8 @@ padding-top:8rem;
 /* ------------------------ */
 .news-page__lg-img{
   height:25rem;
-
+  width:100%;
+  object-fit:cover;
 
 }
 .news-page__img{
@@ -1055,19 +1056,92 @@ padding-top:8rem;
   border-radius:10px;
 }
 
+.careers-page__job-opening__header-container{
+  display:flex;
+  align-items:center;
+  gap:32px;
+  justify-content:center;
+  font-size:18px;
+  background: rgba(253, 253, 102, 0.5);
+}
+.careers-page__job-opening__header-title{
+  cursor:pointer;
+}
+.careers-page__job-opening__header-title--active{
+  font-weight:bold;
+  border-bottom:2px solid #1C68C9;
+}
+.careers-page__card-badge{
+  background-color:#D3D4EB;
+  padding:2px 16px;
+  font-size:12px;
+  margin-top:2px;
+}
+.careers-page__card-p{
+  font-size:14px;
+  margin-top:8px;
+}
+
+.careers-page__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.careers-page__show {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+
 
 /* ------------------------ */
 /* Events */
 /* ------------------------ */
 
-.events-page__title-page{
-  font-size:36px;
-  font-weight:bold;
-  color:#1C68C9;
-  text-align:center;
+.events-page__show {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.events-page__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.events-and-careers-page__title-page-container{
   padding:20px 0;
-  text-transform:uppercase;
   border-bottom:2px solid #1C68C9;
+  display:flex;
+  justify-content:center;
+  align-items:end;
+  gap:48px;
+  
+}
+.events-and-careers-page__title-page--active{
+  font-size:36px !important;
+  font-weight:bold;
+  color:#1C68C9 !important;
+}
+
+.events-and-careers-page__title-page{
+  font-size:18px;
+  color: rgba(28, 104, 192, 0.5);
+  text-transform:uppercase;
+  transition:all .3s ease-in-out;
+  cursor:pointer;
+}
+.events-and-careers-page__title-page:hover{
+  color: rgba(28, 104, 192, 0.8);
+  transform:translateY(-4px);
+
 }
 
 .events-page__card-container{

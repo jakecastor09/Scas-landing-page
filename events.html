@@ -29,10 +29,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script defer src="index.js"></script>
   </head>
   <body>
-    <header class="">
+    <header>
       <div class="bg-primary py-2">
         <div class="container-xxl">
           <!-- Social -->
@@ -95,22 +94,22 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Campuses</a>
+                    <a class="nav-link" href="/campuses.html">Campuses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="/about-us.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link" href="/events.html">Events</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="/news.html">News</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="/careers.html">Careers</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/contact.html">Contact</a>
                   </li>
                 </ul>
                 <div>
@@ -156,22 +155,22 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Campuses</a>
+              <a class="nav-link" href="/campuses.html">Campuses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/about-us.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="/events.html">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="/news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
+              <a class="nav-link" href="/careers.html">Careers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
             <li class="nav-item ps-3">
               <button class="button">My Portal</button>
@@ -205,7 +204,20 @@
       <!-- Events -->
       <section id="events-page" class="pt-5">
         <div class="container-xxl" class="py-5">
-          <h1 class="events-page__title-page">Event List</h1>
+          <div class="events-and-careers-page__title-page-container">
+            <h1
+              id="events-page__event-list"
+              class="events-and-careers-page__title-page events-and-careers-page__title-page--active"
+            >
+              Event List
+            </h1>
+            <h1
+              id="events-page__calendar-list"
+              class="events-and-careers-page__title-page"
+            >
+              Event Calendar
+            </h1>
+          </div>
 
           <div class="d-flex justify-content-end py-4">
             <div>
@@ -217,281 +229,305 @@
             </div>
           </div>
 
-          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 py-5">
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
+          <div>
+            <div id="calendar" class="events-page__hidden mt-4"></div>
+            <div
+              id="events-page__event-list__container"
+              class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 py-5"
+            >
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
                     </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
-                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
-                    </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
                     </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
-                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
-                    </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
                     </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
-                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
-                    </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
                     </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
-                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
-                    </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="events-page__card-container">
-                <div class="events-page__card-l-container">
-                  <div class="events-page__card-day">05</div>
-                  <div class="events-page__card-date">Jan 2024</div>
-                  <!--  -->
-                  <div class="d-flex align-items-center">
-                    <div class="events-page__card-line"></div>
-                    <div class="events-page__card-to">to</div>
-                    <div class="events-page__card-line"></div>
-                  </div>
-                  <!--  -->
-                  <div class="events-page__card-day">06</div>
-                  <div class="events-page__card-date">Feb 2024</div>
-                </div>
-                <div class="events-page__card-r-container">
-                  <h1 class="events-page__card-title">Lorem Ipsum</h1>
-                  <div class="events-page__card-badge">Student</div>
-                  <div class="mt-2">
-                    <div class="events-page__card-time">
-                      <i class="fa-solid fa-clock text-primary me-1"></i> 1:00PM
-                      - 6:00PM
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
                     </div>
-                    <div class="events-page__card-location">
-                      <i class="fa-solid fa-location-dot text-primary me-1"></i>
-                      Lorem ipsum dolor sit amet consectetur.
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
+                  </div>
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
+                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
+                  </div>
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
+                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
+                  </div>
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
+                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
+                  </div>
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="events-page__card-container">
+                  <div class="events-page__card-l-container">
+                    <div class="events-page__card-day">05</div>
+                    <div class="events-page__card-date">Jan 2024</div>
+                    <!--  -->
+                    <div class="d-flex align-items-center">
+                      <div class="events-page__card-line"></div>
+                      <div class="events-page__card-to">to</div>
+                      <div class="events-page__card-line"></div>
+                    </div>
+                    <!--  -->
+                    <div class="events-page__card-day">06</div>
+                    <div class="events-page__card-date">Feb 2024</div>
+                  </div>
+                  <div class="events-page__card-r-container">
+                    <h1 class="events-page__card-title">Lorem Ipsum</h1>
+                    <div class="events-page__card-badge">Student</div>
+                    <div class="mt-2">
+                      <div class="events-page__card-time">
+                        <i class="fa-solid fa-clock text-primary me-1"></i>
+                        1:00PM - 6:00PM
+                      </div>
+                      <div class="events-page__card-location">
+                        <i
+                          class="fa-solid fa-location-dot text-primary me-1"
+                        ></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -676,6 +712,65 @@
         },
       });
       eventSwiper.initialize();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+    <script>
+      // Calendar
+      document.addEventListener('DOMContentLoaded', async function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          selectable: true,
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: '',
+          },
+        });
+
+        calendar.render();
+      });
+    </script>
+    <script>
+      // Events Page
+      const eventListTitle = document.getElementById('events-page__event-list');
+      const eventCalendarTitle = document.getElementById(
+        'events-page__calendar-list'
+      );
+      const eventListContainer = document.getElementById(
+        'events-page__event-list__container'
+      );
+      const calendar = document.getElementById('calendar');
+
+      eventListTitle.addEventListener('click', () => {
+        eventListTitle.classList.add(
+          'events-and-careers-page__title-page--active'
+        );
+        eventCalendarTitle.classList.remove(
+          'events-and-careers-page__title-page--active'
+        );
+      });
+
+      eventCalendarTitle.addEventListener('click', () => {
+        eventCalendarTitle.classList.add(
+          'events-and-careers-page__title-page--active'
+        );
+        eventListTitle.classList.remove(
+          'events-and-careers-page__title-page--active'
+        );
+      });
+
+      eventListTitle.addEventListener('click', () => {
+        eventListContainer.classList.remove('events-page__hidden');
+        eventListContainer.classList.add('events-page__show');
+        calendar.classList.add('events-page__hidden');
+        calendar.classList.remove('events-page__show');
+      });
+      eventCalendarTitle.addEventListener('click', () => {
+        calendar.classList.remove('events-page__hidden');
+        calendar.classList.add('events-page__show');
+        eventListContainer.classList.add('events-page__hidden');
+        eventListContainer.classList.remove('events-page__show');
+      });
     </script>
   </body>
 </html>
