@@ -502,6 +502,39 @@ a{
     font-size: 32px;
     padding: 24px 0 24px 0;
   }
+
+  .home__title{
+    font-size:32px;
+    font-weight:900;
+    color:#ffffff;
+  }
+  
+  .home__img{
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    object-fit:cover;
+    width:100%;
+    height:18rem;
+  }
+  .title-section-1{
+    font-size:32px;
+  }
+  .title-section-container-1{
+    width: 240px; 
+
+  }
+  .about-us__img-title{
+    font-size:36px;
+
+  }
+
+  .active > .about-us__title-container > .about-us__img-title {
+    font-size:48px;
+
+  
+  }
 }
 /* Gallery */
 
@@ -517,6 +550,11 @@ a{
 #video{
   padding:10rem 0;
 }
+.video__video{
+  width:100%;
+  height:500px;
+}
+
 .video__title{
   text-transform:uppercase;
   font-size:32px;
@@ -689,6 +727,13 @@ padding-top:8rem;
     padding:24px 0 24px 0;
 
   }
+  .video__video{
+    width:100%;
+    height:380px;
+  }
+  #video{
+    padding:6rem 0;
+  }
 }
 
 
@@ -812,6 +857,10 @@ padding-top:8rem;
   background:rgba(151, 71, 255, .4)
 }
 
+
+
+
+
 /* Our Story */
 #about_us-page__our-story{
   background:#ffffff;
@@ -911,13 +960,36 @@ padding-top:8rem;
 
   .about_us-page__card__p{
     width:100%;
-
+    font-size:16px;
+    margin-top:36px;
   }
   .about_us-page__card{
     padding:6rem 0;
     position:relative;
   
   }
+
+
+    .about_us-page__title{
+      display:grid;
+      place-items:center;
+      height:100%;
+      font-size:36px;
+    }
+  
+    .about_us-page__section-title{
+      font-size:36px;
+    }
+    .about_us-page__our-story__p{
+
+      font-size:16px;
+
+    }
+    
+    .about_us-page__card__title{
+      font-size:36px;
+    }
+  
   
 }
 
@@ -927,6 +999,14 @@ padding-top:8rem;
 .contact-page__border-x{
   border-right:12px solid #F0F0F0;
   border-left:12px solid #F0F0F0;
+}
+@media (max-width: 768px) {
+  .contact-page__border-x{
+    border-right:none;
+    border-left:none;
+  }
+
+  
 }
 
 /* ------------------------ */
@@ -1030,6 +1110,16 @@ padding-top:8rem;
   border-radius:8px;
 
 }
+@media (max-width: 768px) {
+
+  .news-page__title-lg{
+    font-size:24px;
+  }
+  .news-page__title{
+    font-size:20px;
+  }
+  
+}
 
 /* ------------------------ */
 /* Careers Information */
@@ -1096,6 +1186,25 @@ padding-top:8rem;
   transition: opacity 0.5s ease, height 0.5s ease;
 }
 
+@media (max-width: 768px) {
+
+  .careers-page__job-opening__header-container{
+    font-size:14px;
+    text-align:center;
+
+  }
+  .careers-page__card-p{
+    font-size:12px;
+
+  }
+  .careers-page__title{
+    font-size:24px;
+
+  
+  }
+  
+}
+
 
 
 /* ------------------------ */
@@ -1138,6 +1247,7 @@ padding-top:8rem;
   transition:all .3s ease-in-out;
   cursor:pointer;
 }
+
 .events-and-careers-page__title-page:hover{
   color: rgba(28, 104, 192, 0.8);
   transform:translateY(-4px);
@@ -1221,7 +1331,6 @@ font-size:14px;
 }
 
 .events-page__card-location{
-
 font-size:14px;
 }
 .events-page__photographs-img__container{
@@ -1265,4 +1374,37 @@ font-size:14px;
   left: 50%;
   white-space:nowrap;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+
+  .events-and-careers-page__title-page{
+    font-size:16px;
+  }
+  .events-and-careers-page__title-page--active{
+    font-size:24px !important;
+
+  }
+  .events-and-careers-page__title-page-container{
+    padding:16px 0;
+  }
+  .events-page__photographs-img__title{
+
+    font-size:20px;
+
+  }
+  .events-page__card-title{
+    font-size:20px;
+  }
+  .events-page__card-time{
+    font-size:12px;
+  }
+    
+  .events-page__card-location{
+    font-size:12px;
+  }
+  
+  .events-page__card-badge{
+    font-size:8px;
+  }
 }
